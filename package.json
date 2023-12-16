@@ -1,0 +1,38 @@
+{
+  "name": "@oxc-resolver/binding",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "napi build --platform --release --manifest-path napi/Cargo.toml",
+    "build:debug": "napi build --platform --manifest-path napi/Cargo.toml",
+    "prepublishOnly": "napi pre-publish -t npm",
+    "test": "ava"
+  },
+  "devDependencies": {
+    "@emnapi/core": "^0.44.0",
+    "@emnapi/runtime": "^0.44.0",
+    "@napi-rs/cli": "^3.0.0-alpha.22",
+    "@tybys/wasm-util": "^0.8.0",
+    "@types/node": "^20.10.4",
+    "ava": "^6.0.1",
+    "emnapi": "^0.44.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "ava": {
+    "files": [
+      "napi/__test__/*.spec.mjs"
+    ],
+    "cache": false
+  },
+  "packageManager": "pnpm@8.12.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oxc-project/oxc_resolver.git"
+  },
+  "funding": {
+    "url": "https://github.com/sponsors/Boshen"
+  }
+}
