@@ -25,6 +25,8 @@ const enhancedResolveRoot = join(
   'fixtures'
 )
 
+// https://github.com/webpack/enhanced-resolve/blob/main/test/resolve.test.js
+
 for (const [title, context, request, expected] of [
   [
     'absolute path',

@@ -181,15 +181,14 @@ jobs:
       - name: Prepare dirs and artifacts
         run: |
           pnpm napi create-npm-dirs --package-json-path npm/package.json
-          pnpm napi artifacts
+          pnpm napi artifacts --package-json-path npm/package.json
 
       - name: Publish npm packages as latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         shell: bash
-        # NOTE: The trailing slash on $package/ changes it to publishing the directory
         run: |
           cp napi/index.js npm/index.js
           cp napi/index.d.ts npm/index.d.ts
-          pnpm napi pre-publish -t npm
+          pnpm napi pre-publish -t npm --package-json-path npm/package.json
           npm publish npm/ --tag latest --provenance --access public
