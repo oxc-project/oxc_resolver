@@ -15,7 +15,7 @@ const __wasi = new __nodeWASI({
   version: 'preview1',
   env: process.env,
   preopens: {
-    '/': '/',
+    '/': '/'
   }
 })
 

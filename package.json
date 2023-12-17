@@ -11,7 +11,7 @@
   "devDependencies": {
     "@emnapi/core": "^0.44.0",
     "@emnapi/runtime": "^0.44.0",
-    "@napi-rs/cli": "^3.0.0-alpha.22",
+    "@napi-rs/cli": "^3.0.0-alpha.23",
     "@tybys/wasm-util": "^0.8.0",
     "@types/node": "^20.10.4",
     "ava": "^6.0.1",

@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^0.44.0
     version: 0.44.0
   '@napi-rs/cli':
-    specifier: ^3.0.0-alpha.22
-    version: 3.0.0-alpha.22(@emnapi/runtime@0.44.0)(@tybys/wasm-util@0.8.0)(emnapi@0.44.0)
+    specifier: ^3.0.0-alpha.23
+    version: 3.0.0-alpha.23(@emnapi/runtime@0.44.0)(@tybys/wasm-util@0.8.0)(emnapi@0.44.0)
   '@tybys/wasm-util':
     specifier: ^0.8.0
     version: 0.8.0
@@ -69,8 +69,8 @@ packages:
       - supports-color
     dev: true
 
-  /@napi-rs/cli@3.0.0-alpha.22(@emnapi/runtime@0.44.0)(@tybys/wasm-util@0.8.0)(emnapi@0.44.0):
-    resolution: {integrity: sha512-qQNkj6GFr9flMqBUvVcVCTXJtfgeqKlxwgK+OH74RgjLe4YzNU47z6FHQok20Nwph/0LiSGeYpOPKPlQF5jz4Q==}
+  /@napi-rs/cli@3.0.0-alpha.23(@emnapi/runtime@0.44.0)(@tybys/wasm-util@0.8.0)(emnapi@0.44.0):
+    resolution: {integrity: sha512-B+3SlWebG2WQzky0GXmYT/LOdX8fUdgqrQhkBaiUwbsHGMvszXkvLke/bLR89mwOSQZg4BmKLxtJuLkjDcghdQ==}
     engines: {node: '>= 16'}
     hasBin: true
     peerDependencies:
