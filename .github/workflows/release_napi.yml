@@ -90,6 +90,9 @@ jobs:
           node-version: 20
           cache: pnpm
 
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
       - name: Add Rust Target
         run: rustup target add ${{ matrix.target }}
 
@@ -167,11 +170,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Node.js
+      - name: corepack
+        run: corepack enable
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: 'https://registry.npmjs.org'
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Download Artifacts
         uses: actions/download-artifact@v4

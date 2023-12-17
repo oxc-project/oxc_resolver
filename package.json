@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "build": "napi build --platform --release --manifest-path napi/Cargo.toml",
-    "build:debug": "napi build --platform --manifest-path napi/Cargo.toml",
+    "build": "napi build --platform --release --package-json-path npm/package.json --manifest-path napi/Cargo.toml",
+    "build:debug": "napi build --platform --package-json-path npm/package.json --manifest-path napi/Cargo.toml",
     "prepublishOnly": "napi pre-publish -t npm",
     "test": "ava"
   },
