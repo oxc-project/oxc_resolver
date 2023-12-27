@@ -57,9 +57,9 @@ function __napi_rs_initialize_modules(__napiInstance) {
   __napiInstance.exports['__napi_register__Restriction_struct_2']?.()
   __napiInstance.exports['__napi_register__TsconfigOptions_struct_3']?.()
   __napiInstance.exports['__napi_register__ResolveResult_struct_4']?.()
-  __napiInstance.exports['__napi_register__ResolverFactory_struct_5']?.()
-  __napiInstance.exports['__napi_register__ResolverFactory_impl_9']?.()
-  __napiInstance.exports['__napi_register__sync_10']?.()
+  __napiInstance.exports['__napi_register__sync_5']?.()
+  __napiInstance.exports['__napi_register__ResolverFactory_struct_6']?.()
+  __napiInstance.exports['__napi_register__ResolverFactory_impl_12']?.()
 }
 module.exports.ResolverFactory = __napiModule.exports.ResolverFactory,
 module.exports.EnforceExtension = __napiModule.exports.EnforceExtension,
